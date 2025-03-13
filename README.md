@@ -1,4 +1,4 @@
-# README - Ajout de variantes aux datapacks Cobblemon
+# Ajout de variantes aux datapacks Cobblemon
 
 ## Description
 Ce script Python permet d'ajouter facilement des variantes (« aspects ») aux Pokémon dans un datapack Cobblemon. Il génère automatiquement les fichiers nécessaires pour la gestion des espèces, des textures et des résolutions d'aspect.
@@ -35,6 +35,7 @@ Avant d'exécuter ce script, assurez-vous d'avoir :
 4. Renseignez les informations demandées :
    - **Nom de l'aspect** : (exemple : "shiny", "shadow", etc.).
    - **Liste des Pokémon** sous le format `id_nom` (exemple : `25_Pikachu, 6_Charizard`).
+     - Vous pouvez obtenir l'ID des Pokémon à cette URL : [Liste des IDs Cobblemon](https://gitlab.com/cable-mc/cobblemon/-/tree/main/common/src/main/resources/assets/cobblemon/bedrock/pokemon/resolvers?ref_type=heads)
 
 Le script va alors :
 - Générer un fichier de définition d'aspect dans `output/data/cobblemon/species_features/`.
@@ -74,6 +75,7 @@ output/assets/cobblemon/textures/pokemon/6_charizard/charizard_ghost.png
 
 ## Remarques
 - Assurez-vous que les textures sont nommées correctement et placées dans `textures/<aspect>/`.
+- Si une texture est absente, le script affichera un avertissement mais continuera l'exécution.
 - Les fichiers JSON générés peuvent être modifiés manuellement si nécessaire.
 
 ---
